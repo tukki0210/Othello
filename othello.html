@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #board {
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            width: 800px;
+        }
+        #board div {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: green;
+        }
+        #board .black{
+            color: black;
+            font-size: 60px;
+            text-align: center;
+            line-height: 100px;
+            
+        }
+        #board .white{
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            line-height: 100px;
+        }
+        #board .clickable{
+            background-color: aquamarine;
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="board"></div>
+</body>
+<script src="./othello.js"></script>
+</html>
